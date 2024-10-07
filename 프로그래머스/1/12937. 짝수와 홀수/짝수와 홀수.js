@@ -1,9 +1,9 @@
 function solution(num) {
-    let answer = 0; 
-    if (num % 2 === 0) {
-        answer = "Even";
+    let answer = 0
+    if(num % 2 === 0) {
+        answer = "Even"
     } else {
-        answer = "Odd";
+        answer = "Odd"
     }
     return answer;
 }
