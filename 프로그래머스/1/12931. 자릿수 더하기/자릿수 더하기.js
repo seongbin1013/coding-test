@@ -1,9 +1,11 @@
-function solution(n) {
-    let answer = 0;
-    let  m = String(n);
+function solution(n)
+{
+ let answer = 0
+ 
+ while(n>0) {
+     answer += n % 10
+     n = Math.floor(n / 10)
+ }
 
-    for ( let i = 0;i <m.length;i++) {
-        answer += parseInt(m[i]);
-    }
     return answer;
 }
