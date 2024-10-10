@@ -1,10 +1,12 @@
 function solution(n) {
-    var answer = 0;
+    let answer = 0;
     let sqrt = Math.sqrt(n);
-    if (sqrt % 1 !== 0) { 
-        answer = -1;
+    
+    if (sqrt % 1 === 0) {
+        answer = Math.pow(sqrt+1,2)
     } else {
-        answer = Math.pow(sqrt+1,2); 
+        answer = -1
     }
-    return answer
+    
+    return answer;
 }
